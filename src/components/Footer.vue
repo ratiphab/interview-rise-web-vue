@@ -1,9 +1,7 @@
 <template>
     <div class="a">
         <div class="b">
-            <div>
-                <img src="@/assets/logo-alone.png"/>
-            </div>
+            <img src="@/assets/logo-alone.png"/>
         </div>
         <ul class="menu">
             <li v-for="(item, index) in menuItems" :key="index">
@@ -36,11 +34,13 @@ export default {
 <style>
 .a {
     display : flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    background-color: #FFFFFF;
 }
 .b {
     display : flex;
     flex:0.2;
+    align-items: center;
 }
 
 .social-media {

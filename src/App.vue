@@ -6,10 +6,7 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <header>
-    <Header />
-  </header>
-
+  <Header/> 
   <body>
     <div class="context1">
       <div class="stytext">
@@ -80,14 +77,17 @@ import Footer from './components/Footer.vue'
       <p>Lorem ipsum dolor sit amet, conuectetur ad ipiacing eltFurus ipsum eet fociil mi aod noc ulitrices</p>
     </div>
   </div>
-
-  <footer>
-    <Footer/>
-  </footer>
+  <Footer/>
   
 </template>
 
 <style scoped>
+.header-css {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+}
+
 .context1 {
   weight: 100%;
   height: 100%;

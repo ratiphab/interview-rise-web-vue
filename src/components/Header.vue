@@ -33,6 +33,9 @@ export default {
 .a {
     display: flex;
     justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
 }
 
 .menu {
