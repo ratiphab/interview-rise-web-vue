@@ -9,6 +9,8 @@
                 </li>
             </ul>
         <div class="logout">
+            <p>{{name}}</p>
+            <p>{{age}}</p>
             <p>Logout</p>
             <img src="@/assets/profile.png"/>
         </div>
@@ -17,6 +19,10 @@
 
 <script>
 export default {
+  props: {
+    name : String,
+    age : Number,
+  },
   data() {
     return {
       menuItems: [

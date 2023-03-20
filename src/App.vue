@@ -5,8 +5,32 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 </script>
 
+<script>
+import { store } from './store.js'
+export default {
+   methods: {
+    greet: function (event) {
+      store.increment() 
+      console.log(store.count)
+    }
+  },
+  data() {
+    return {
+      age : 52,
+      name : "Ratiphab",
+      store,
+      menuItems: [
+        { label: "Explore products", },
+        { label: "Products design", },
+        { label: "Pricing", }
+      ]
+    }
+  }
+}
+</script>
+
 <template>
-  <Header/> 
+  <Header name="Timeza55+" :age=age /> 
   <body>
     <div class="context1">
       <div class="stytext">
@@ -77,6 +101,11 @@ import Footer from './components/Footer.vue'
       <p>Lorem ipsum dolor sit amet, conuectetur ad ipiacing eltFurus ipsum eet fociil mi aod noc ulitrices</p>
     </div>
   </div>
+
+  <div>
+    <button v-on:click="greet">Greet</button>
+  </div>
+
   <Footer/>
   
 </template>
